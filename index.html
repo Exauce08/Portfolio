@@ -64,21 +64,21 @@
                 <i class='bx bx-code-block'></i>
                 <h3>Developpement web</h3>
                 <p> J'ai dévéloppé une bonne compréhension des langages de programmation web comme HTML, CSS, JavaScript, ainsi que des frameworks comme PHP, Node.js, Django, etc., utile pour la gestion de contenu et la résolution de problèmes.</p>
-                <a href="#" class="btn">Lire plus</a>
+                <a href="https://github.com/Exauce08" class="btn">Lire plus</a>
             </div>
 
             <div class="competences-box">
                 <i class='bx bxs-data'></i>
                 <h3>Data</h3>
                 <p>Je suis capable de créer, configurer, maintenir et optimiser des bases de données pour prendre en charge les sites web. Cela implique souvent l'utilisation de systèmes de gestion de bases de données tels que MySQL, PostgreSQL, MongoDB, etc.</p>
-                <a href="#" class="btn">Lire plus</a>
+                <a href="https://github.com/Exauce08" class="btn">Lire plus</a>
             </div>
 
             <div class="competences-box">
                 <i class='bx bx-signal-5'></i>
                 <h3>Sécurité Réseaux</h3>
                 <p>Je suis consciente des meilleures pratiques en matière de sécurité web et je suis donc capable de mettre en œuvre des mesures de sécurité pour protéger les sites web contre les attaques malveillantes, comme les injections SQL, les attaques par force brute, etc.</p>
-                <a href="#" class="btn">Lire plus</a>
+                <a href="https://github.com/Exauce08" class="btn">Lire plus</a>
             </div>
         </div>
     </section>
@@ -138,25 +138,27 @@
         </div>
     </section>
     <!--Design de la section contact-->
-    <section class="contact" id="contact">
+   
+     <section class="contact" id="contact">
       <h2 class="heading">Contactez <span>Moi!</span></h2>
       <form id="monFormulaire" action="index.php" method="post">
-        <div class="input-box">
+        <!--<div class="input-box">
           <input type="text" placeholder="Nom"  name="nom" id="nom" required>
           <input type="email" placeholder="Adresse email" name="email" id="email" required>
         </div>
-
+      --><!--
         <div class="input-box">
           <input type="tel" placeholder="Téléphone" name="telephone" id="telephone"required>
-          <!--<input type="text" placeholder="Objet du mail" name="message" id="message">-->
+          <!--<input type="text" placeholder="Objet du mail" name="message" id="message">
         </div>
 
         <textarea name="message" id="message" cols="  30" rows="10" placeholder="Votre Message"required></textarea>
-        <!--<input type="submit" value="Envoyez le message" class="btn">-->
-        <button type="submit" class="btn">Envoyer le message</button>
+        <!--<input type="submit" value="Envoyez le message" class="btn">
+        <button type="submit" class="btn">Envoyer le message</button>-->
       </form>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSexhMPIIeRDIhPDtJu1z4k3D9bf6NO0QAXu_FarC0Q6MxGrXw/viewform?embedded=true" width="640" height="1090" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
     </section>
-
+    
     <!--design du footer-->
     <footer class="footer">
       <div class="footer-text">
@@ -175,5 +177,30 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script src="script.js"></script>
+
+    <!--coté server firebase-->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDTlO02zGQy6uQ58YAInKw818JeDU1NMug",
+        authDomain: "portfolio1-9e67c.firebaseapp.com",
+        projectId: "portfolio1-9e67c",
+        storageBucket: "portfolio1-9e67c.appspot.com",
+        messagingSenderId: "461882164042",
+        appId: "1:461882164042:web:8a533eb8b23c93429477b3",
+        measurementId: "G-P03EH96TFN"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
 </body>
 </html>
